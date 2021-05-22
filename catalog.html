@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс - Каталог</title>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <a href="index.html"><img src="/img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <input type="search" placeholder="Поиск по сайту">
+            <button type="submit">Поиск</button>
+          </form>
+  
+          <ul>
+            <li><a href="#">Валентин Петухов</a></li>
+            <li><a href="#">Выйти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+  
+         <ul>
+           <li><a href="№">Каталог товаров</a></li>
+           <li><a href="#">Доставка</a></li>
+           <li><a href="#">Гарантия</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul> 
+        </nav>
+      </header>
+
+      <main>
+        <h1>Моноподы для селфи</h1>
+
+        <ul>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li>Моноподы для селфи</li>
+        </ul>
+
+        <section>
+            <h2>Фильтр:</h2>
+            <form method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                  <legend>Стоимость</legend>
+                  <ul>
+                      <li>
+                        <input type="range" name="price" id="price-range-1" min="0" max="10000" value="0">
+                        <label for="price-range-1">от</label></li>
+                      <li>
+                        <input type="range" name="price" id="price-range-2" min="0" max="10000" value="5000">
+                        <label for="price-range-2">до</label>
+                      </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <ul>
+                      <li>
+                          <input type="checkbox" name="black" id="color-black" checked>
+                          <label for="color-black">Чёрный</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" name="white" id="color-white">
+                        <label for="color-white">Белый</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="blue" id="color-blue" checked>
+                        <label for="color-blue">Синий</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="red" id="color-red" checked>
+                        <label for="color-red">Красный</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pink" id="color-pink">
+                        <label for="color-pink">Розовый</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Bluetooth</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="bluetooth-group" id="have-bluetooth" value="yes" checked>
+                            <label for="have-bluetooth">Есть</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="bluetooth-group" id="no-bluetooth" value="no">
+                            <label for="no-bluetooth">Нет</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit">Показать</button>
+              </form>
+
+            <h2>Сортировка:</h2>
+                <ul>
+                    <li>По цене</li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">По популярности</a></li>
+                </ul>
+        </section>
+
+        <section>
+            <h2>Список товаров</h2>
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Любительская селфи-палка</h3>
+                        <p>
+                          <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
+                        </p>
+                      </a>
+                      <p>1 100 руб.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Профессиональная селфи-палка </h3>
+                        <p>
+                          <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка ">
+                        </p>
+                      </a>
+                      <p>1 500 руб.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Непотопляемая селфи-палка</h3>
+                        <p>
+                          <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
+                        </p>
+                      </a>
+                      <p>1 500 руб.</p>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Селфи-палка «Следуй за мной»</h3>
+                        <p>
+                          <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+                        </p>
+                      </a>
+                      <p>1 900 руб.</p>
+                </li>
+            </ul>
+        </section>
+
+        <button type="button" disabled>Назад</button>
+            <ul>
+                <li>1</li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+            </ul>
+        <button type="button">Вперед</button>
+      </main>
+
+      <footer>
+        <section>
+            <a href="index.html"><img src="/img/logo.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+            <p>Санкт-Петербург, набережная <br>
+              реки Карповки, 5, литера П.</p>
+          </section>
+    
+          <section>
+            <ul>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul> 
+           </section>
+    
+          <section>
+            <ul>
+              <li><a href="#">Валентин Петухов</a></li>
+              <li><a href="#">Выйти</a></li>
+              <li><a href="#">Сравнить</a></li>
+              <li><a href="#">Корзина</a></li>
+            </ul>
+          </section>
+    
+          <section>
+            <ul>
+              <li>
+                <a href="#">Фейсбук</a>
+              </li>
+              <li>
+                <a href="#">Инстаграм</a>
+              </li>
+              <li>
+                <a href="#">Твиттер</a>
+              </li>
+            </ul>
+          </section>
+          
+          <p>Тел:
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+          </p>
+    
+          <p>
+            <a href="https://htmlacademy.ru">HTML Academy</a>
+          </p>
+          
+        </footer>
+    
+        <section>
+          <h2>Напишите нам</h2>
+      
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label for="letter-name">Ваше имя</label>
+              <input id="letter-name" type="text" name="name" placeholder="Имя Фамилия">
+            </p>
+            <p>
+              <label for="letter-email">Ваш e-mail</label>
+              <input id="letter-email" type="email" name="email" placeholder="email@example.com">
+            </p>
+            <p>
+              <label for="letter-text">Текст письма</label><br>
+              <textarea name="text" id="letter-text" cols="30" rows="10">В свободной форме</textarea>
+            </p>
+            <button type="submit">Отправить</button>
+          </form>
+          <button type="button">Закрыть</button>
+        </section>
+    
+        <section>
+          <h2>Карта</h2>
+          <!-- Здесь будет карта -->
+          <button type="button">Закрыть</button>
+        </section>
+  </body>
+</html>
