@@ -1,0 +1,240 @@
+/* Fonts */
+
+@font-face {
+  font-family: "Gilroy", Arial, sans-serif;
+    src: url(/fonts/gilroylight.woff2) format("woff2"),
+    url(/fonts/gilroylight.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy", Arial, sans-serif;
+  src: url(/fonts/gilroyextrabold.woff2) format("woff2"),
+  url(/fonts/gilroyextrabold.woff) format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans", Arial, sans-serif;
+  src: url(/fonts/opensans.woff2) format("woff2"),
+  url(/fonts/opensans.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans", Arial, sans-serif;
+  src: url(/fonts/opensanslight.woff2) format("woff2"),
+  url(/fonts/opensanslight.woff) format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+
+  --special-yellow-dark: #f0c52e;
+  --special-yellow-light: #f7e296;
+  --special-green: #91c92f;
+
+  --status: #f6dada;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 960px;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 300;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main-navigation */
+
+.main-navigation {
+  background-color: var(--special-yellow-light);
+}
+
+.main-logo:hover,
+.account-navigation-item:hover,
+.site-navigation-item:hover {
+  opacity: 0.6;
+}
+
+.account-navigation-list {
+  list-style: none;
+ }
+
+.site-navigation-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  list-style: none;
+  letter-spacing: 0.2em;
+}
+
+.search-bar input {
+  background-color: transparent;
+  border: transparent;
+}
+
+/* Slider */
+
+.slider-number {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 179px;
+  line-height: 220px;
+  color: var(--basic-white);
+  background-color: var(--special-yellow-light);
+  /* я знаю, что у номера нет бэкграунд цвета и он двигаться будет, сейчас сделала, чтобы видно было */
+}
+
+.slider-caption {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.slider-items-table {
+  border-collapse: collapse;
+  text-align: left;
+  letter-spacing: 0.1em;
+  background-color: transparent;
+}
+
+.slider-items-table-header {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.slider-items-table-description {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+}
+
+/* Popular categories */
+
+.categories-item img {
+  background-color: var(--special-yellow-light);
+}
+
+.categories-name {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+}
+
+/* Services */
+
+.service-name {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.service-name p {
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.slider-button-list {
+  list-style: none;
+}
+
+.partners-list {
+  list-style: none;
+}
+
+.block-name {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+.transport-companies-list {
+  list-style-image: url(/img/list-image.svg);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.about-us-block p,
+.contacts-block p {
+  line-height: 28px;
+}
+
+.main-footer {
+  background-color: var(--basic-dark);
+  color: var(--basic-white);
+}
+
+.main-footer a {
+  color: var(--basic-white);
+}
+
+.footer-site-navigation-list {
+  color: var(--basic-white);
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+}
+
+.footer-site-navigation-list,
+.footer-account-navigation-list,
+.footer-socials-list {
+  list-style: none;
+}
+
+.message label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
