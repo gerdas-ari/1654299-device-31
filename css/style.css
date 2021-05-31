@@ -65,7 +65,7 @@
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 img {
@@ -80,8 +80,8 @@ img {
 }
 
 .main-logo:hover,
-.account-navigation-item:hover,
-.site-navigation-item:hover {
+.account-navigation-item:hover a,
+.site-navigation-item:hover a {
   opacity: 0.6;
 }
 
@@ -96,6 +96,7 @@ img {
   line-height: 22px;
   list-style: none;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .search-bar input {
@@ -127,7 +128,18 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 22px;
+  text-transform: uppercase;
+
 }
+
+.button::before {
+  display: inline-block;
+  content: "";
+  width: 220px;
+  height: 8px;
+  background-color: var(--special-yellow-dark);
+  position: absolute;
+ }
 
 .slider-items-table {
   border-collapse: collapse;
@@ -166,6 +178,15 @@ img {
 
 /* Services */
 
+.services::before{
+  display: inline-block;
+  content: "";
+  width: 100%;
+  height: 288px;
+  background-color: var(--basic-grey-light);
+  position: relative;
+}
+
 .service-name {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -196,7 +217,7 @@ img {
 }
 
 .transport-companies-list {
-  list-style-image: url(/img/list-image.svg);
+  list-style-image: url(img/list-image.svg);
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
   font-size: 16px;
@@ -224,6 +245,7 @@ img {
   font-weight: 800;
   line-height: 22px;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .footer-site-navigation-list,
@@ -237,4 +259,20 @@ img {
   font-size: 18px;
   font-weight: 800;
   line-height: 22px;
+}
+
+/* Catalog Page */
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 58px;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  font-size: 14px;
+  line-height: 19px;
+  opacity: 0.3;
 }
