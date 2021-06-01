@@ -55,7 +55,7 @@
 
         <section class="filters">
             <h2>Фильтр:</h2>
-            <form method="get" action="https://echo.htmlacademy.ru">
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Стоимость</legend>
                   <ul>
@@ -71,24 +71,24 @@
                 <fieldset>
                   <legend>Цвет</legend>
                   <ul>
-                      <li>
-                          <input type="checkbox" name="black" id="color-black" checked>
+                      <li class="filter-option filter-checkbox">
+                          <input class="filter-input-checkbox filter-input" type="checkbox" name="black" id="color-black" checked>
                           <label for="color-black">Чёрный</label>
                       </li>
-                      <li>
-                        <input type="checkbox" name="white" id="color-white">
+                      <li class="filter-option filter-checkbox">
+                        <input class="filter-input-checkbox filter-input" type="checkbox" name="white" id="color-white">
                         <label for="color-white">Белый</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="blue" id="color-blue" checked>
+                    <li class="filter-option filter-checkbox">
+                        <input class="filter-input-checkbox filter-input" type="checkbox" name="blue" id="color-blue" checked>
                         <label for="color-blue">Синий</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="red" id="color-red" checked>
+                    <li class="filter-option filter-checkbox">
+                        <input class="filter-input-checkbox filter-input" type="checkbox" name="red" id="color-red" checked>
                         <label for="color-red">Красный</label>
                     </li>
-                    <li>
-                        <input type="checkbox" name="pink" id="color-pink">
+                    <li class="filter-option filter-checkbox">
+                        <input class="filter-input-checkbox filter-input" type="checkbox" name="pink" id="color-pink">
                         <label for="color-pink">Розовый</label>
                     </li>
                   </ul>
@@ -96,77 +96,81 @@
                 <fieldset>
                     <legend>Bluetooth</legend>
                     <ul>
-                        <li>
-                            <input type="radio" name="bluetooth-group" id="have-bluetooth" value="yes" checked>
+                        <li class="filter-option filter-radio">
+                            <input class="filter-input-radio filter-input" type="radio" name="bluetooth-group" id="have-bluetooth" value="yes" checked>
                             <label for="have-bluetooth">Есть</label>
                         </li>
-                        <li>
-                            <input type="radio" name="bluetooth-group" id="no-bluetooth" value="no">
+                        <li class="filter-option filter-radio">
+                            <input class="filter-input-radio filter-input" type="radio" name="bluetooth-group" id="no-bluetooth" value="no">
                             <label for="no-bluetooth">Нет</label>
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit">Показать</button>
+                <button class="button show-button" type="submit">Показать</button>
               </form>
 
+            <div class="sorting">
             <h2>Сортировка:</h2>
-                <ul>
+                <ul class="sorting-list">
                     <li><a>По цене</a></li>
                     <li><a href="#">По типу</a></li>
                     <li><a href="#">По популярности</a></li>
                 </ul>
+              </div>
         </section>
 
-        <section>
+        <section class="catalog">
             <h2>Список товаров</h2>
 
-            <ul>
-                <li>
+            <ul class="catalog-list">
+              <li class="catalog-item">
                     <a href="#">
                         <h3>Любительская селфи-палка</h3>
                         <p>
                           <img src="img/item-selfie-1.jpg" width="360" height="380">
                         </p>
                       </a>
-                      <p>1 100 руб.</p>
-                </li>
-                <li>
+                      <p class="price">1 100 руб.</p>
+              </li>
+              <li class="catalog-item">
                     <a href="#">
                         <h3>Профессиональная селфи-палка </h3>
                         <p>
                           <img src="img/item-selfie-2.jpg" width="360" height="380">
                         </p>
                       </a>
-                      <p>1 500 руб.</p>
-                </li>
-                <li>
+                      <p class="price">1 500 руб.</p>
+              </li>
+              <li class="catalog-item">
                     <a href="#">
                         <h3>Непотопляемая селфи-палка</h3>
                         <p>
                           <img src="img/item-selfie-3.jpg" width="360" height="380">
                         </p>
                       </a>
-                      <p>1 500 руб.</p>
-                </li>
-                <li>
+                      <p class="price">1 500 руб.</p>
+              </li>
+              <li class="catalog-item">
                     <a href="#">
                         <h3>Селфи-палка «Следуй за мной»</h3>
                         <p>
                           <img src="img/item-selfie-4.jpg" width="360" height="380">
                         </p>
                       </a>
-                      <p>1 900 руб.</p>
+                      <p class="price">1 900 руб.</p>
                 </li>
             </ul>
         </section>
 
-        <button type="button" disabled>Назад</button>
-            <ul>
-                <li><a>1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
+        <div class="pages">
+          <button class="pages-button" type="button" disabled>Назад</button>
+            <ul class="pages-list">
+              <li><a>1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
             </ul>
-        <button type="button">Вперед</button>
+          <button class="pages-button" type="button">Вперед</button>
+        </div>
       </main>
 
       <footer class="main-footer">
