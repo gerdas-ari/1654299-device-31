@@ -215,6 +215,10 @@ button {
   position: relative;
 }
 
+.categories-item {
+display: inline;
+
+}
 .service-name {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
