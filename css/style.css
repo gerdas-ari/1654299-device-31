@@ -130,6 +130,28 @@ button {
 
 /* Slider */
 
+.slider-items {
+
+}
+
+.slider-item-quadcopter,
+.slider-item-watch,
+.slider-item-selfiestick {
+  display: grid;
+  margin: 0 auto;
+  width: 1160px;
+  grid-template-columns: 600px 1fr;
+  align-content: start;
+}
+
+.slider-item-quadcopter img {
+  grid-column: 1/2;
+}
+
+.grid-column-description {
+  grid-column: 2/-1;
+}
+
 .slider-number {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: 800;
@@ -170,7 +192,6 @@ button {
   z-index: -1;
   top: 8px;
   left: 0px;
-
  }
 
  .button:hover::before {
@@ -208,19 +229,33 @@ button {
   gap: 40px;
   margin: 0 auto;
   grid-template-columns: 160px 160px 160px 160px 160px 160px;
-  grid-template-rows: 160px auto;
+  grid-template-rows: auto;
   text-align: center;
   vertical-align: middle;
-  background-color: var(--special-yellow-light);
 }
 
 .categories-item  {
  list-style: none;
- display: grid;
 }
 
-.categories-item img {
+.categories-item-bg-color:focus img {
+  opacity: 0.3;
+}
 
+.categories-item-bg-color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  padding-left: 0;
+  margin-bottom: 38px;
+  background-color: var(--special-yellow-light);
+}
+
+.categories-item:hover .categories-item-bg-color,
+.categories-item:focus .categories-item-bg-color {
+  background-color: var(--special-yellow-dark);
 }
 
 .categories-name {
@@ -233,13 +268,14 @@ button {
 
 /* Services */
 
-.services::before{
-  display: inline-block;
-  content: "";
-  width: 100%;
-  height: 288px;
-  background-color: var(--basic-grey-light);
-  position: relative;
+.delivery-service,
+.warranty-service,
+.credit-service {
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: auto auto;
 }
 
 .service-name {
@@ -248,24 +284,52 @@ button {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+  grid-column: 2/-1;
+  grid-row: 1/2;
 }
 
-.service-name p {
+.delivery-service p {
   line-height: 30px;
   letter-spacing: 0.1em;
+  grid-column: 2/-1;
+  grid-row: 2/-1;
 }
 
 .slider-button-list {
   list-style: none;
+  grid-column: 1/2;
+  grid-row: 1/3;
+
 }
+
+.delivery-button,
+.warranty-button,
+.credit-button {
+  padding-bottom: 39px;
+}
+
+/* Partners */
 
 .partners-list {
   list-style: none;
   width: 1160px;
   margin: 0 auto;
+  padding-left: 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr;
+  gap: 40px;
+}
+
+/* Info Blocks */
+
+.grid-info {
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
 
 .block-name {
@@ -301,13 +365,59 @@ button {
   line-height: 28px;
 }
 
+/* Footer */
+
 .main-footer {
   background-color: var(--basic-dark);
   color: var(--basic-white);
 }
 
+.grid-footer {
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  padding-left: 0;
+  grid-template-columns: 1fr 430px 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.footer-logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.footer-address {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
 .main-footer a {
   color: var(--basic-white);
+}
+
+.footer-site-navigation {
+grid-column: 2/3;
+grid-row: 2/3;
+}
+
+.footer-account-navigation {
+  grid-column: 3/-1;
+  grid-row: 1/2;
+}
+
+.footer-socials {
+  grid-column: 2/3;
+  grid-row: 3/-1;
+}
+
+.footer-phone {
+  grid-column: 3/-1;
+  grid-row: 2/3;
+}
+
+.footer-html-academy-logo {
+  grid-column: 3/-1;
+  grid-row: 3/-1;
 }
 
 .footer-site-navigation-list {
