@@ -52,7 +52,7 @@
 /* Global */
 
 .page-body {
-  min-width: 960px;
+  min-width: 1440px;
   margin: 0px;
   padding: 0px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -94,7 +94,31 @@ button {
 /* Main-navigation */
 
 .main-navigation {
+ display: flex;
+ margin-top: 40px;
+ margin-right: 140px;
+ margin-right: 140px;
+}
+
+.main-navigation::before {
+  display: flex;
+  content: "";
+  width: 1160px;
+  height: 300px;
   background-color: var(--special-yellow-light);
+  z-index: -1;
+  position: absolute;
+  margin: 40px 140px 50px 140px;
+}
+
+.main-logo {
+  width: 163.3px;
+  height: 34.96px;
+  margin-top: 20px;
+  margin-bottom: 29px;
+  margin-left: 200px;
+  margin-right: 1077px;
+  position: absolute;
 }
 
 .main-logo:hover,
@@ -111,7 +135,15 @@ button {
 
 .account-navigation-list {
   list-style: none;
+  display: inline;
+  margin: 0;
+  margin-top: 84px;
  }
+
+.account-navigation-item,
+.site-navigation-item {
+  display: inline;
+}
 
 .site-navigation-list {
   font-family: "Gilroy", Arial, sans-serif;
@@ -121,18 +153,23 @@ button {
   list-style: none;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 154px;
 }
 
 .search-bar input {
   background-color: transparent;
   border: transparent;
+  margin: 0;
+  padding: 0;
+  margin-top: 84px;
+  margin-left: 238px;
 }
 
 /* Slider */
 
-.slider-items {
-
-}
 
 .slider-item-quadcopter,
 .slider-item-watch,
@@ -319,6 +356,7 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr;
   gap: 40px;
+  margin-bottom: 90px;
 }
 
 /* Info Blocks */
@@ -330,6 +368,7 @@ button {
   padding-left: 0;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
+  margin-bottom: 86px;
 }
 
 .block-name {
@@ -338,6 +377,10 @@ button {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
+}
+
+.block-button {
+  margin-top: 85px;
 }
 
 .block-button::before {
@@ -349,7 +392,7 @@ button {
   position: absolute;
   z-index: -1;
   top: 8px;
-  left: 0px;
+  left: -20px;
 }
 
 .transport-companies-list {
@@ -384,6 +427,7 @@ button {
 .footer-logo {
   grid-column: 1/2;
   grid-row: 1/2;
+  margin-top: 64px;
 }
 
 .footer-address {
@@ -403,21 +447,31 @@ grid-row: 2/3;
 .footer-account-navigation {
   grid-column: 3/-1;
   grid-row: 1/2;
+  text-align: center;
+
 }
+
 
 .footer-socials {
   grid-column: 2/3;
   grid-row: 3/-1;
+  text-align: center;
+}
+
+.footer-socials-item {
+  display: inline;
 }
 
 .footer-phone {
   grid-column: 3/-1;
   grid-row: 2/3;
+  text-align: center;
 }
 
 .footer-html-academy-logo {
   grid-column: 3/-1;
   grid-row: 3/-1;
+  text-align: center;
 }
 
 .footer-site-navigation-list {
@@ -428,6 +482,12 @@ grid-row: 2/3;
   line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-account-navigation-item,
+.footer-site-navigation-item {
+  display: inline;
 }
 
 .footer-site-navigation-list,
