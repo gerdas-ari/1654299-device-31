@@ -14,6 +14,8 @@
   <body class="page-body">
 
     <header class="main-header">
+
+      <div class="wrapper">
       <nav class="main-navigation">
         <a class="main-logo">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
@@ -21,7 +23,7 @@
 
         <form class="search-bar" action="https://echo.htmlacademy.ru/" method="get">
           <input type="search" placeholder="Поиск по сайту">
-          <button type="submit">Поиск</button>
+          <button class="visually-hidden" type="submit">Поиск</button>
         </form>
 
         <ul class="account-navigation-list">
@@ -37,6 +39,7 @@
          <li class="site-navigation-item contacts"><a href="#">Контакты</a></li>
        </ul>
       </nav>
+      </div>
     </header>
 
     <main class="container">
@@ -50,7 +53,7 @@
           <img src="img/slider-quadcopter.png" width="526" height="334" alt="Квадрокоптер с камерой">
 
           <div class="grid-column-description">
-          <span class="slider-number">03</span>
+          <!-- <span class="slider-number">03</span> -->
           <p class="slider-caption">Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.</p>
@@ -188,7 +191,6 @@
             <li><a class="button warranty-button" href="#">Гарантия</a></li>
             <li><a class="button credit-button" href="#">Кредит</a></li>
           </ul>
-          <!-- <img src="img/icon-delivery.svg" width="136" height="164" alt="Доставка"> -->
         </div>
 
         <div class="warranty-service">
@@ -198,12 +200,6 @@
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
             не переживайте, мы выдадим вам новый. <br>
             Товар, не дом, конечно же.</p>
-
-          <ul class="slider-button-list">
-            <li><a class="button delivery-button" href="#">Доставка</a></li>
-            <li><a class="button warranty-button">Гарантия</a></li>
-            <li><a class="button credit-button" href="#">Кредит</a></li>
-          </ul>
         </div>
 
         <div class="credit-service">
@@ -213,12 +209,6 @@
           <p>Залезть в долговую яму стало проще! Кредитные консультанты <br>
             подберут для вас наиболее выгодные <br>
             условия кредита. Выгодные для нашего банка, разумеется.</p>
-
-          <ul class="slider-button-list">
-            <li><a class="button delivery-button" href="#">Доставка</a></li>
-            <li><a class="button warranty-button" href="#">Гарантия</a></li>
-            <li><a class="button credit-button">Кредит</a></li>
-          </ul>
         </div>
       </section>
 
