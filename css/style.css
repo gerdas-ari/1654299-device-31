@@ -108,6 +108,7 @@ button {
 
 .main-navigation {
  display: flex;
+ flex-wrap: wrap;
  background-color: var(--special-yellow-light);
  height: 300px;
  margin-top: 40px;
@@ -129,9 +130,15 @@ button {
   border: transparent;
   margin: 0;
   padding: 0;
+  height: 20px;
+
+}
+
+.search-bar {
   margin-top: 44px;
   margin-left: 98px;
   margin-right: 380px;
+  height: 20px;
 }
 
 .main-logo:hover,
@@ -149,7 +156,7 @@ button {
 .account-navigation-list {
   list-style: none;
   display: flex;
-
+  height: 20px;
   margin: 0;
   padding: 0;
   margin-top: 44px;
@@ -173,11 +180,11 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   display: flex;
+  height: 22px;
   margin: 0;
   padding: 0;
-  position: absolute;
-  left: 60px;
-  top: 114px;
+  margin-left: 60px;
+  margin-top: -50px;
 }
 
 .site-navigation-item.submenu-catalog {
