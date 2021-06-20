@@ -291,7 +291,6 @@ button {
 }
 
 .slider-dots-item {
-
   margin-right: 18px;
 }
 
@@ -365,9 +364,7 @@ button {
 
 /* Services */
 
-.delivery-service,
-.warranty-service,
-.credit-service {
+.services {
   display: grid;
   width: 1160px;
   margin: 0 auto;
@@ -375,6 +372,17 @@ button {
   grid-template-rows: 400px;
   position: relative;
 }
+
+/* .delivery-service,
+.warranty-service,
+.credit-service {
+  display: grid;
+  width: 1160px;
+  margin: 0 auto;
+  grid-template-columns: 400px 1fr;
+  grid-template-rows: 400px;
+  position: relative; */
+
 
 .warranty-service,
 .credit-service {
@@ -387,7 +395,7 @@ button {
   position: absolute;
   width: 136px;
   height: 164px;
-  background-image: url(/img/icon-delivery.svg);
+  background-image: url(img/icon-delivery.svg);
   right: 0;
   top: 86px;
 }
@@ -411,7 +419,6 @@ button {
   letter-spacing: 0.1em;
   grid-column: 2/-1;
   grid-row: 1/2;
-  margin-top: 184px;
 }
 
 .warranty-service::before {
@@ -420,7 +427,7 @@ button {
   position: absolute;
   width: 171px;
   height: 195px;
-  background-image: url(/img/icon-warranty.svg);
+  background-image: url(img/icon-warranty.svg);
   right: 0;
   top: 86px;
 }
@@ -431,7 +438,7 @@ button {
   position: absolute;
   width: 156px;
   height: 188px;
-  background-image: url(/img/icon-credit.svg);
+  background-image: url(img/icon-credit.svg);
   right: 0;
   top: 86px;
 }
@@ -597,6 +604,11 @@ button {
 
 .footer-socials-item {
   display: inline;
+  margin-right: 20px;
+}
+
+.footer-socials-item:last-of-type {
+  margin: 0;
 }
 
 .footer-phone {
