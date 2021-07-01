@@ -14,6 +14,8 @@
   <body class="page-body">
 
     <header class="main-header">
+
+      <div class="wrapper">
       <nav class="main-navigation">
         <a class="main-logo" href="index.html">
           <img src="img/logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс">
@@ -25,8 +27,8 @@
         </form>
 
         <ul class="account-navigation-list">
-          <li><a href="#">Валентин Петухов</a></li>
-          <li><a href="#">Выйти</a></li>
+          <li class="account-navigation-item account-name"><a href="#">Валентин Петухов</a></li>
+          <li class="account-navigation-item exit"><a href="#">Выйти</a></li>
           <li class="account-navigation-item compare"><a href="#">Сравнить</a></li>
           <li class="account-navigation-item cart"><a href="#">Корзина</a></li>
         </ul>
@@ -38,9 +40,11 @@
           <li class="site-navigation-item contacts"><a href="#">Контакты</a></li>
         </ul>
       </nav>
+      </div>
     </header>
 
       <main>
+        <div class="wrapper">
         <h1 class="page-title">Моноподы для селфи</h1>
 
         <ul class="breadcrumbs-list">
@@ -53,7 +57,8 @@
             <li class="breadcrumbs-item"><a>Моноподы для селфи</a></li>
         </ul>
 
-        <section class="filters">
+        <div class="page-catalog">
+          <div class="filter-group">
             <h2>Фильтр:</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
@@ -108,6 +113,7 @@
                 </fieldset>
                 <button class="button show-button" type="submit">Показать</button>
               </form>
+              </div>
 
             <div class="sorting">
             <h2>Сортировка:</h2>
@@ -117,10 +123,10 @@
                     <li><a href="#">По популярности</a></li>
                 </ul>
               </div>
-        </section>
+
 
         <section class="catalog">
-            <h2>Список товаров</h2>
+            <h2 class="visually-hidden">Список товаров</h2>
 
             <ul class="catalog-list">
               <li class="catalog-item">
@@ -171,15 +177,17 @@
             </ul>
           <button class="pages-button" type="button">Вперед</button>
         </div>
+        </div>
+        </div>
       </main>
 
       <footer class="main-footer">
+        <div class="grid-footer">
 
-        <section>
-            <a href="index.html"><img src="img/footer-logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
-            <p>Санкт-Петербург, набережная <br>
+            <a class="footer-logo" href="index.html"><img src="img/footer-logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+            <p class="footer-address">Санкт-Петербург, набережная <br>
               реки Карповки, 5, литера П.</p>
-          </section>
+
 
           <section class="footer-site-navigation">
             <ul class="footer-site-navigation-list">
@@ -191,8 +199,8 @@
 
           <section class="footer-account-navigation">
             <ul class="footer-account-navigation-list">
-              <li><a href="#">Валентин Петухов</a></li>
-              <li><a href="#">Выйти</a></li>
+              <li class="account-navigation-item account-name"><a href="#">Валентин Петухов</a></li>
+              <li class="account-navigation-item exit"><a href="#">Выйти</a></li>
               <li class="footer-account-navigation-item compare"><a href="#">Сравнить</a></li>
               <li class="footer-account-navigation-item cart"><a href="#">Корзина</a></li>
             </ul>
@@ -212,14 +220,14 @@
             </ul>
           </section>
 
-          <p>Тел:
+          <p class="footer-phone">Тел:
             <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
           </p>
 
-          <p>
+          <p class="footer-html-academy-logo">
             <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy"></a>
           </p>
-
+          </div>
         </footer>
 
         <section class="message">

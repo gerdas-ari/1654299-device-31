@@ -52,7 +52,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1440px;
+  min-width: 1160px;
   margin: 0px;
   padding: 0px;
   font-family: "Open Sans", Arial, sans-serif;
@@ -171,6 +171,14 @@ button {
   margin-right: 63px;
 }
 
+.account-navigation-item.exit {
+  margin-left: 20px;
+  margin-right: 102px;
+}
+
+.account-navigation-item.account-name {
+  margin-left: -60px;
+}
 
 .site-navigation-list {
   font-family: "Gilroy", Arial, sans-serif;
@@ -390,12 +398,12 @@ button {
 }
 
 .delivery-service::before {
-  display: inline-block;
+  display: block;
   content: "";
   position: absolute;
   width: 136px;
   height: 164px;
-  background-image: url(img/icon-delivery.svg);
+  background-image: url(/img/icon-delivery.svg);
   right: 0;
   top: 86px;
 }
@@ -427,7 +435,7 @@ button {
   position: absolute;
   width: 171px;
   height: 195px;
-  background-image: url(img/icon-warranty.svg);
+  background-image: url(/img/icon-warranty.svg);
   right: 0;
   top: 86px;
 }
@@ -438,7 +446,7 @@ button {
   position: absolute;
   width: 156px;
   height: 188px;
-  background-image: url(img/icon-credit.svg);
+  background-image: url(/img/icon-credit.svg);
   right: 0;
   top: 86px;
 }
@@ -667,6 +675,7 @@ button {
   font-size: 47px;
   font-weight: 800;
   line-height: 58px;
+  margin-left: 60px;
 }
 
 .breadcrumbs-list {
@@ -687,7 +696,31 @@ button {
   opacity: 0.1;
 }
 
+/* Catalog Page Grid */
+
+.page-catalog {
+  min-width: 1160px;
+  display: grid;
+  grid-template-columns: 328px 832px;
+  grid-template-rows: 70px auto 70px;
+}
+
 /* Filter */
+
+.filter-group {
+  grid-column: 1/2;
+  grid-row: 1/-1;
+}
+
+.sorting {
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.catalog {
+  grid-column: 2/-1;
+  grid-row: 2/-1;
+}
 
 .filter legend {
   font-family: "Gilroy", Arial, sans-serif;
@@ -729,6 +762,8 @@ button {
 
 .catalog-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .catalog-list h3 {
@@ -749,6 +784,8 @@ button {
 
 .pages {
   background-color: var(--basic-grey-light);
+  grid-column: 2/-1;
+  grid-row: 3/-1;
 }
 
 .pages-list {
@@ -777,4 +814,3 @@ button {
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
-
