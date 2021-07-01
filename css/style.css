@@ -118,11 +118,10 @@ button {
 
 
 .main-logo {
-  width: 163.3px;
-  height: 34.96px;
-  margin-top: -18px;
-  margin-bottom: 285px;
-  margin-left: 60px;
+  width: 164px;
+  height: 35px;
+  top: -18px;
+  left: 60px;
   position: absolute;
 }
 
@@ -137,7 +136,7 @@ button {
 .search-bar {
   margin-top: 44px;
   margin-left: 98px;
-  margin-right: 380px;
+  margin-right: auto;
   margin-bottom: 50px;
   height: 20px;
 }
@@ -161,6 +160,7 @@ button {
   margin: 0;
   padding: 0;
   margin-top: 44px;
+  margin-right: 60px;
  }
 
 .account-navigation-item.login {
@@ -608,11 +608,14 @@ button {
   text-align: center;
   align-self: center;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-socials-item {
-  display: inline;
+
   margin-right: 20px;
+
 }
 
 .footer-socials-item:last-of-type {
@@ -643,11 +646,12 @@ button {
   text-transform: uppercase;
   text-align: center;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-.footer-account-navigation-item,
-.footer-site-navigation-item {
-  display: inline;
+.footer-account-navigation-list {
+  justify-content: flex-end;
 }
 
 .footer-site-navigation-list,
@@ -655,10 +659,16 @@ button {
 .footer-socials-list {
   list-style: none;
   padding: 0;
+  display: flex;
+
 }
 
 .footer-account-navigation-item:not(:last-child) {
   margin-right: 62px;
+}
+
+.footer-account-navigation-item:first-child {
+  margin-right: 25px;
 }
 
 .message label {
