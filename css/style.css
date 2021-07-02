@@ -176,10 +176,6 @@ button {
   margin-right: 102px;
 }
 
-.account-navigation-item.account-name {
-  margin-left: -60px;
-}
-
 .site-navigation-list {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -715,8 +711,10 @@ button {
 .page-catalog {
   min-width: 1160px;
   display: grid;
-  grid-template-columns: 328px 832px;
-  grid-template-rows: 70px 1024px 70px;
+  grid-template-columns: 328px 760px;
+  grid-template-rows: 70px 1064px 70px;
+  column-gap: 72px;
+  margin-bottom: 78px;
 }
 
 /* Filter */
@@ -724,13 +722,29 @@ button {
 .filter-group {
   grid-column: 1/2;
   grid-row: 1/-1;
+  margin-left: 60px;
+
+}
+
+.filter-option {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.filter fieldset {
+  padding: 0;
+  margin-top: 40px;
+}
+
+.filter ul {
+  padding: 0;
 }
 
 .sorting {
   grid-column: 2/-1;
   grid-row: 1/2;
   display: flex;
-  margin-left: 72px;
+  align-self: center;
 }
 
 .sorting h2 {
@@ -741,7 +755,7 @@ button {
 .sorting-list {
   padding: 0;
   display: flex;
-  align-self: center;
+  align-items: center;
   margin-left: 74px;
 }
 
@@ -760,6 +774,7 @@ button {
   font-weight: 800;
   line-height: 17.15px;
   letter-spacing: 0.1em;
+  margin-bottom: 32px;
 }
 
 .filter ul {
@@ -782,7 +797,7 @@ button {
 
 .show-button {
   z-index: 1;
-  justify-self: center;
+  margin-top: 50px;
 }
 
 .sorting-list {
@@ -797,12 +812,13 @@ button {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 40px;
   padding: 0;
-  margin-left: 72px;
+
 }
 
-.catalog-item:nth-child(odd) {
-  margin-right: 40px;
+.catalog-item:nth-child(even) {
+  padding-right: -30px;
 }
 
 .catalog-list img {
