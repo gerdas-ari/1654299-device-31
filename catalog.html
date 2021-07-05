@@ -63,15 +63,24 @@
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                 <fieldset>
                   <legend>Стоимость</legend>
-                  <ul>
-                      <li>
-                        <input type="range" name="price" id="price-range-1" min="0" max="10000" value="0">
-                        <label for="price-range-1">от</label></li>
-                      <li>
-                        <input type="range" name="price" id="price-range-2" min="0" max="10000" value="5000">
-                        <label for="price-range-2">до</label>
-                      </li>
-                  </ul>
+                    <div class="range-filter">
+                      <div class="range-controls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle-min" tabindex="0"></div>
+                        <div class="toggle toggle-max" tabindex="0"></div>
+                      </div>
+
+                      <div class="price-controls">
+                        <label class="min-price">
+                          от <input type="number" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">
+                          до <input type="number" name="max-price" value="5000">
+                        </label>
+                      </div>
+                    </div>
                 </fieldset>
                 <fieldset>
                   <legend>Цвет</legend>
@@ -159,7 +168,7 @@
                     </a>
 
               </li>
-              <li class="catalog-item">
+              <li class="catalog-item new-item">
                     <a href="#">
                         <h3>Селфи-палка «Следуй за мной»</h3>
                         <p>
