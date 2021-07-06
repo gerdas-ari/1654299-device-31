@@ -159,7 +159,7 @@ button {
   height: 13px;
   top: 5px;
   left: -38px;
-  background-image: url("/img/icon-search.svg");
+  background-image: url("/../img/icon-search.svg");
 }
 
 .main-logo:hover,
@@ -195,7 +195,7 @@ button {
   height: 10px;
   top: 6px;
   left: -22px;
-  background-image: url("/img/icon-account.svg");
+  background-image: url("/../img/icon-account.svg");
 }
 
 .account-navigation-item.compare {
@@ -211,7 +211,7 @@ button {
   height: 9px;
   top: 6px;
   left: -22px;
-  background-image: url("/img/icon-compare.svg");
+  background-image: url("/../img/icon-compare.svg");
 }
 
 .account-navigation-item.cart {
@@ -228,7 +228,7 @@ button {
   height: 9px;
   top: 6px;
   left: -22px;
-  background-image: url("/img/icon-cart.svg");
+  background-image: url("/../img/icon-cart.svg");
 }
 
 .account-navigation-item.exit {
@@ -250,7 +250,7 @@ button {
   height: 10px;
   top: 6px;
   left: -21px;
-  background-image: url("/img/icon-account.svg");
+  background-image: url("/../img/icon-account.svg");
 }
 
 .site-navigation-list {
@@ -282,7 +282,7 @@ button {
   position: absolute;
   width: 22px;
   height: 22px;
-  background-image: url("/img/icon-plus.svg");
+  background-image: url("/../img/icon-plus.svg");
   right: -32px;
   top: 0;
 }
@@ -604,7 +604,7 @@ button {
   position: absolute;
   width: 136px;
   height: 164px;
-  background-image: url("/img/icon-delivery.svg");
+  background-image: url("/../img/icon-delivery.svg");
   right: 0;
   top: 86px;
 }
@@ -636,7 +636,7 @@ button {
   position: absolute;
   width: 171px;
   height: 195px;
-  background-image: url("/img/icon-warranty.svg");
+  background-image: url("/../img/icon-warranty.svg");
   right: 0;
   top: 86px;
 }
@@ -647,7 +647,7 @@ button {
   position: absolute;
   width: 156px;
   height: 188px;
-  background-image: url("/img/icon-credit.svg");
+  background-image: url("/../img/icon-credit.svg");
   right: 0;
   top: 86px;
 }
@@ -703,6 +703,8 @@ button {
 .partners-dji, .partners-sp,
 .partners-gopro, .partners-vive {
   position: relative;
+  filter: grayscale(100%);
+  opacity: 40%;
 }
 
 .partners-dji:hover,
@@ -711,7 +713,8 @@ button {
   display: block;
   width: 260px;
   height: 100px;
-  background-image: url("/img/logo-dji-color.png");
+  filter: none;
+  opacity: 100%;
 }
 
 .partners-sp:hover,
@@ -720,7 +723,8 @@ button {
   display: block;
   width: 260px;
   height: 100px;
-  background-image: url("/img/logo-spgadgets-color.png");
+  filter: none;
+  opacity: 100%;
 }
 
 .partners-gopro:hover,
@@ -729,7 +733,8 @@ button {
   display: block;
   width: 260px;
   height: 100px;
-  background-image: url("/img/logo-gopro-color.png");
+  filter: none;
+  opacity: 100%;
 }
 
 .partners-vive:hover,
@@ -738,7 +743,8 @@ button {
   display: block;
   width: 260px;
   height: 100px;
-  background-image: url("/img/logo-vive-color.png");
+  filter: none;
+  opacity: 100%;
 }
 
 /* Info Blocks */
@@ -793,7 +799,7 @@ button {
 }
 
 .transport-companies-item {
-  list-style-image: url("/img/list-image.svg");
+  list-style-image: url("../img/list-image.svg");
 }
 
 .transport-companies-item:not(:last-child) {
