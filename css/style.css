@@ -282,7 +282,7 @@ button {
   position: absolute;
   width: 22px;
   height: 22px;
-  background-image: url("/../img/icon-plus.svg");
+  background-image: url("../img/icon-plus.svg");
   right: -32px;
   top: 0;
 }
