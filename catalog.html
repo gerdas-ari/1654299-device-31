@@ -243,31 +243,31 @@
           </div>
         </footer>
 
-        <section class="message">
+        <section class=" modal modal-message">
           <h2 class="visually-hidden">Напишите нам</h2>
 
           <form action="https://echo.htmlacademy.ru" method="post">
             <p>
-              <label for="message-name">Ваше имя</label>
+              <label for="message-name">Ваше имя</label><br>
               <input id="message-name" type="text" name="name" placeholder="Имя Фамилия">
             </p>
             <p>
-              <label for="message-email">Ваш e-mail</label>
+              <label for="message-email">Ваш e-mail</label><br>
               <input id="message-email" type="email" name="email" placeholder="email@example.com">
             </p>
             <p>
               <label for="message-text">Текст письма</label><br>
-              <textarea name="text" id="letter-text" cols="30" rows="10">В свободной форме</textarea>
+              <textarea name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>
             </p>
             <button class="button" type="submit">Отправить</button>
           </form>
-          <button class="close-button" type="button">Закрыть</button>
+          <button class="close-button" type="button" aria-label="Закрыть"></button>
         </section>
 
-        <section class="map-window">
-          <h2>Карта</h2>
-          <!-- Здесь будет карта -->
-          <button class="close-button" type="button">Закрыть</button>
+        <section class="modal modal-map">
+          <h2 class="visually-hidden">Карта</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="573" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+          <button class="close-button" type="button" aria-label="Закрыть"></button>
         </section>
   </body>
 </html>
