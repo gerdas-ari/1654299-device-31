@@ -22,9 +22,8 @@
         </a>
 
         <form class="search-bar" action="https://echo.htmlacademy.ru/" method="get">
-          <label>
-          <input type="search" placeholder="Поиск по сайту">
-          </label>
+          <label for="search-input" class="search-label"></label>
+          <input id="search-input" type="search" placeholder="Поиск по сайту">
           <button class="visually-hidden" type="submit"></button>
         </form>
 
@@ -35,11 +34,22 @@
         </ul>
 
        <ul class="site-navigation-list">
-         <li class="site-navigation-item submenu-catalog"><a href="catalog.html">Каталог товаров</a></li>
+         <li class="site-navigation-item submenu-catalog"><a href="catalog.html">Каталог товаров</a>
+          <ul class="drop-down-menu">
+            <li class="drop-down-item"><a href="#">Виртуальная реальность</a></li>
+            <li class="drop-down-item"><a href="#">Моноподы для селфи</a></li>
+            <li class="drop-down-item"><a href="#">Экшн-камеры</a></li>
+            <li class="drop-down-item"><a href="#">Фитнес-браслеты</a></li>
+            <li class="drop-down-item smart-watch"><a href="#">Умные часы</a></li>
+            <li class="drop-down-item"><a href="#">Квадрокоптер</a></li>
+          </ul>
+        </li>
          <li class="site-navigation-item delivery"><a href="#">Доставка</a></li>
          <li class="site-navigation-item warranty"><a href="#">Гарантия</a></li>
          <li class="site-navigation-item contacts"><a href="#">Контакты</a></li>
        </ul>
+
+
       </nav>
       </div>
     </header>
