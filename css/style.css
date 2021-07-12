@@ -111,13 +111,13 @@ button {
 }
 
 .main-navigation {
- display: grid;
- grid-template-columns: 600px 280px 280px;
- grid-template-rows: 75px 75px 150px;
- background-color: var(--special-yellow-light);
- height: 300px;
- margin-top: 40px;
- position: relative;
+  display: grid;
+  grid-template-columns: 600px 280px 280px;
+  grid-template-rows: 75px 75px 150px;
+  background-color: var(--special-yellow-light);
+  height: 300px;
+  margin-top: 40px;
+  position: relative;
 }
 
 .main-navigation-catalog {
@@ -474,7 +474,7 @@ button {
   width: 100px;
   height: 7px;
   background-color: var(--basic-white);
-  top: -80px;
+  top: -94px;
   right: 458px;
 }
 
@@ -509,7 +509,8 @@ button {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  margin-top: -53px;
+  margin-top: -55px;
+  margin-bottom: 25px;
 }
 
 .slider-item-watch .slider-caption {
@@ -570,14 +571,14 @@ button {
 }
 
 .grid-column-description .button {
-  margin: 60px 0;
+  margin: 48px 0;
 }
 
 .slider-dots-list {
   position: absolute;
   list-style: none;
-  top: 210px;
-  right: 88px;
+  top: 192px;
+  right: 74px;
   display: flex;
   padding: 0;
   margin: 0;
@@ -631,7 +632,7 @@ button {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  padding-right: 64px;
+  padding-right: 80px;
   padding-top: 15px;
 }
 
@@ -653,7 +654,7 @@ button {
   grid-template-rows: auto;
   text-align: center;
   vertical-align: middle;
-  margin-top: 96px;
+  margin-top: 126px;
   margin-bottom: 69px;
 }
 
