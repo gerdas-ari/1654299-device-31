@@ -480,7 +480,7 @@ button {
 
 .slider-item-quadcopter img {
   grid-column: 1/2;
-  margin-top: -63px;
+  margin-top: -46px;
   margin-left: 30px;
   margin-bottom: 30px;
 }
@@ -509,7 +509,7 @@ button {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  margin-top: -55px;
+  margin-top: -37px;
   margin-bottom: 25px;
 }
 
@@ -577,8 +577,8 @@ button {
 .slider-dots-list {
   position: absolute;
   list-style: none;
-  top: 192px;
-  right: 72px;
+  top: 210px;
+  right: 71px;
   display: flex;
   padding: 0;
   margin: 0;
@@ -654,7 +654,7 @@ button {
   grid-template-rows: auto;
   text-align: center;
   vertical-align: middle;
-  margin-top: 127px;
+  margin-top: 107px;
   margin-bottom: 69px;
 }
 
