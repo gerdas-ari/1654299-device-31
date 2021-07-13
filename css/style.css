@@ -893,7 +893,7 @@ button {
 }
 
 .block-button {
-  margin-top: 85px;
+  margin-top: 73px;
   margin-left: 13px;
 }
 
@@ -918,6 +918,7 @@ button {
   font-weight: 800;
   font-size: 16px;
   line-height: 28px;
+  padding: 0;
   margin: 0;
   margin-top: 20px;
   margin-left: 32px;
@@ -928,15 +929,15 @@ button {
 }
 
 .transport-companies-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .about-us-block p {
-  margin-bottom: 40px;
+  margin-bottom: 48px;
 }
 
 .about-us-description {
-  margin-bottom: 60px;
+  margin-bottom: 66px;
 }
 
 .about-us-block p,
@@ -954,7 +955,7 @@ button {
 }
 
 .contacts-block img {
-  margin-top: 2px;
+  margin-top: -2px;
 }
 
 .about-us-block::before,
