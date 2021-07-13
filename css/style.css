@@ -265,7 +265,7 @@ button {
 }
 
 .account-navigation-item.cart {
-  margin-left: 63px;
+  margin-left: 45px;
   margin-right: 60px;
   position: relative;
 }
@@ -798,7 +798,7 @@ button {
 .delivery-button,
 .warranty-button,
 .credit-button {
-  padding-bottom: 39px;
+  padding-bottom: 28px;
 }
 
 .delivery-button:active::before {
@@ -889,11 +889,12 @@ button {
   line-height: 58px;
   letter-spacing: 0.2em;
   margin-top: 53px;
+  margin-bottom: 43px;
 }
 
 .block-button {
   margin-top: 85px;
-  margin-left: 20px;
+  margin-left: 13px;
 }
 
 .block-button::before {
@@ -919,6 +920,7 @@ button {
   line-height: 28px;
   margin: 0;
   margin-top: 20px;
+  margin-left: 32px;
 }
 
 .transport-companies-item {
@@ -933,6 +935,10 @@ button {
   margin-bottom: 40px;
 }
 
+.about-us-description {
+  margin-bottom: 60px;
+}
+
 .about-us-block p,
 .contacts-block p {
   line-height: 28px;
@@ -945,6 +951,10 @@ button {
 
 .contacts-block {
   margin-left: 20px;
+}
+
+.contacts-block img {
+  margin-top: 2px;
 }
 
 .about-us-block::before,
@@ -1015,6 +1025,7 @@ button {
   grid-row: 1/2;
   text-align: end;
   align-self: center;
+  margin-top: 10px;
 }
 
 .footer-socials {
@@ -1104,7 +1115,7 @@ button {
 }
 
 .footer-account-navigation-item:not(:last-child) {
-  margin-right: 62px;
+  margin-right: 48px;
 }
 
 .footer-account-navigation-item.login {
@@ -1123,7 +1134,7 @@ button {
 }
 
 .footer-account-navigation-item.account-name {
-  margin-right: 25px;
+  margin-right: 0;
   position: relative;
 }
 
@@ -1446,6 +1457,10 @@ button {
   border: none;
 }
 
+.fieldset-bluetooth {
+  margin-top: 33px;
+}
+
 .filter legend {
   position: relative;
 }
@@ -1523,6 +1538,8 @@ button {
 
 .filter ul {
   padding: 0;
+  margin: 0;
+  margin-top: 3px;
 }
 
 .filter-option label {
@@ -1667,7 +1684,8 @@ button {
 
 .show-button {
   z-index: 1;
-  margin-top: 13px;
+  margin-top: 23px;
+  margin-left: -12px;
 }
 
 .sorting-list {
@@ -1720,8 +1738,11 @@ button {
   height: 380px;
 }
 
-.catalog-list h3 {
+.catalog-list a {
   order: 1;
+}
+
+.catalog-list h3 {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   font-weight: 800;
@@ -1732,7 +1753,7 @@ button {
   margin-top: 25px;
 }
 
-.catalog-item a {
+.catalog-item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -1746,7 +1767,7 @@ button {
 
 .add-to-cart-button {
   position: absolute;
-  bottom: 245px;
+  bottom: 260px;
   left: 68px;
   z-index: 1;
   display: none;
