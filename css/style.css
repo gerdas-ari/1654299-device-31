@@ -319,7 +319,7 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   margin: 0;
   padding: 0;
   margin-left: 60px;
@@ -333,7 +333,7 @@ button {
 .site-navigation-item.submenu-catalog {
   margin-right: auto;
   position: relative;
-  width: 542px;
+  width: 540px;
   z-index: 2;
 }
 
@@ -536,6 +536,7 @@ button {
   text-transform: uppercase;
   position: relative;
   display: inline-block;
+  vertical-align: middle;
   text-align: center;
   width: 220px;
   padding: 10px;
@@ -544,6 +545,7 @@ button {
 
 .button::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 220px;
   height: 8px;
@@ -551,7 +553,7 @@ button {
   position: absolute;
   z-index: -1;
   top: 18px;
-  left: 4px;
+  left: 8px;
 }
 
 .button:hover::before {
@@ -755,6 +757,7 @@ button {
 
 .warranty-service::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   position: absolute;
   width: 171px;
@@ -766,6 +769,7 @@ button {
 
 .credit-service::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   position: absolute;
   width: 156px;
@@ -899,6 +903,7 @@ button {
 
 .block-button::before {
   display: inline-block;
+  vertical-align: middle;
   content: "";
   width: 260px;
   height: 8px;
@@ -1599,6 +1604,11 @@ button {
   opacity: 0.6;
 }
 
+.filter-input-checkbox:disabled + label {
+  opacity: 0.25;
+}
+
+
 .sorting {
   grid-column: 2/-1;
   grid-row: 1/2;
@@ -1730,13 +1740,10 @@ button {
   margin-bottom: 22px;
 }
 
-.catalog-item:nth-child(even) {
-  padding-right: -30px;
-}
-
 .catalog-list img {
   width: 360px;
   height: 380px;
+  background-color: #eeeeee;
 }
 
 .catalog-list a {
@@ -1750,6 +1757,7 @@ button {
   line-height: 22.05px;
   letter-spacing: 0.05em;
   display: inline-block;
+  vertical-align: middle;
   width: 270px;
   margin-top: 25px;
 }
