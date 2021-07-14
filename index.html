@@ -24,7 +24,7 @@
         <form class="search-bar" action="https://echo.htmlacademy.ru/" method="get">
           <label for="search-input" class="search-label"></label>
           <input id="search-input" type="search" placeholder="Поиск по сайту">
-          <button class="search-button" type="submit">Найти</button>
+          <button class="search-button" type="submit" tabindex="0">Найти</button>
         </form>
 
         <ul class="account-navigation-list">
@@ -34,9 +34,9 @@
         </ul>
 
        <ul class="site-navigation-list">
-         <li class="site-navigation-item submenu-catalog"><a href="catalog.html">Каталог товаров</a>
+         <li class="site-navigation-item submenu-catalog" tabindex="0"><a href="catalog.html">Каталог товаров</a>
           <ul class="drop-down-menu">
-            <li class="drop-down-item"><a href="#">Виртуальная реальность</a></li>
+            <li class="drop-down-item"><a href="#" tabindex="0">Виртуальная реальность</a></li>
             <li class="drop-down-item"><a href="catalog.html">Моноподы для селфи</a></li>
             <li class="drop-down-item"><a href="#">Экшн-камеры</a></li>
             <li class="drop-down-item"><a href="#">Фитнес-браслеты</a></li>
@@ -48,8 +48,6 @@
          <li class="site-navigation-item warranty"><a href="#">Гарантия</a></li>
          <li class="site-navigation-item contacts"><a href="#">Контакты</a></li>
        </ul>
-
-
       </nav>
       </div>
     </header>
@@ -267,9 +265,10 @@
         <h2 class="block-name">Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете <br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <a class="map" href="#"></a> <br>
-          <img src="img/main-map.jpg" width="560" height="222" alt="Адрес: Санкт-Петербург, набережная реки Карповки, 5, литера П."><br>
-        <a class="button block-button" href="#">Напишите нам</a>
+        <a class="map" href="#">
+          <img src="img/main-map.jpg" width="560" height="222" alt="Адрес: Санкт-Петербург, набережная реки Карповки, 5, литера П.">
+        </a>
+        <a class="button block-button popup-button" href="#">Напишите нам</a>
       </section>
       </div>
     </main>
@@ -277,7 +276,7 @@
     <footer class="main-footer">
       <div class="grid-footer">
 
-        <a class="footer-logo" href="#"><img src="img/footer-logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
+        <a class="footer-logo"><img src="img/footer-logo-device.svg" width="163" height="35" alt="Логотип магазина Девайс"></a>
         <p class="footer-address">Санкт-Петербург, набережная <br>
           реки Карповки, 5, литера П.</p>
 
@@ -317,7 +316,7 @@
       </p>
 
       <p class="footer-html-academy-logo">
-        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115px" height="34px"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115px" height="34px"></a>
       </p>
       </div>
     </footer>
@@ -325,18 +324,18 @@
     <section class=" modal modal-message">
       <h2 class="visually-hidden">Напишите нам</h2>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="message-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label for="message-name">Ваше имя</label><br>
-          <input id="message-name" type="text" name="name" placeholder="Имя Фамилия">
+          <input class="form-name" id="message-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p>
           <label for="message-email">Ваш e-mail</label><br>
-          <input id="message-email" type="email" name="email" placeholder="email@example.com">
+          <input class="form-email" id="message-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p>
           <label for="message-text">Текст письма</label><br>
-          <textarea name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>
+          <textarea class="form-textarea" name="text" id="message-text" cols="30" rows="10">В свободной форме</textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
       </form>
@@ -349,6 +348,8 @@
       <button class="close-button" type="button" aria-label="Закрыть"></button>
     </section>
 
+    <script src="js/popup.js"></script>
+    <script src="js/map.js"></script>
   </body>
 </html>
 

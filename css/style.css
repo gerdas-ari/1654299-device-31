@@ -373,7 +373,7 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 540px;
+  width: 530px;
   height: 134px;
   padding-top: 30px;
   background-color: var(--special-yellow-light);
@@ -383,7 +383,7 @@ button {
 }
 
 .catalog-dropdown {
-  padding-right: 560px;
+  padding-right: 570px;
   background-color: var(--special-yellow-light);
   /* display: none; */
 }
@@ -405,7 +405,12 @@ button {
   opacity: 0.3;
 }
 
+
 .submenu-catalog:hover ul {
+  display: flex;
+}
+
+.submenu-catalog:focus ul {
   display: flex;
 }
 
@@ -562,6 +567,13 @@ button {
   left: 5px;
 }
 
+.button:focus::before {
+  height: 40px;
+  top: 0;
+  left: 5px;
+  outline: none;
+}
+
 .button:active {
   color: #A88A20;
 }
@@ -690,6 +702,7 @@ button {
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.05em;
+  outline: none;
 }
 
 /* Services */
@@ -960,7 +973,7 @@ button {
 }
 
 .contacts-block img {
-  margin-top: -2px;
+  margin-top: 18px;
 }
 
 .about-us-block::before,
@@ -1218,12 +1231,27 @@ button {
   z-index: 6;
 }
 
+.modal-map {
+  display: none;
+  width: 960px;
+  height: 573px;
+}
+
 .modal-message {
   display: none;
   top: 80px;
   bottom: auto;
   width: 760px;
   padding: 92px 100px 70px 100px;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-message form {
@@ -1276,6 +1304,46 @@ button {
   background-color: #f6dada;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .close-button {
   position: absolute;
   top: 20px;
@@ -1285,6 +1353,7 @@ button {
   border-radius: 50%;
   background-color: var(--special-yellow-dark);
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .close-button:hover {
@@ -1314,11 +1383,6 @@ button {
   transform: rotate(-45deg);
 }
 
-.modal-map {
-  display: none;
-  width: 960px;
-  height: 573px;
-}
 
 .modal-map iframe {
   border: none;
