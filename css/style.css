@@ -179,7 +179,12 @@ button {
   opacity: 0.6;
 }
 
-.search-bar input:focus + button {
+.search-bar input:focus + button,
+.search-bar input:active + button {
+  display: block;
+}
+
+.search-button:active {
   display: block;
 }
 
@@ -388,6 +393,13 @@ button {
   /* display: none; */
 }
 
+/* .drop-down-menu:hover,
+.drop-down-menu:focus-within {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+} */
+
 .drop-down-item {
   padding-bottom: 20px;
 }
@@ -410,9 +422,10 @@ button {
   display: flex;
 }
 
-.submenu-catalog:focus ul {
+.submenu-catalog:focus-within ul {
   display: flex;
 }
+
 
 /* Slider */
 
@@ -1228,7 +1241,7 @@ button {
   margin: auto;
   background-color: var(--basic-white);
   box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.15);
-  z-index: 6;
+  z-index: 3;
 }
 
 .modal-map {
@@ -1255,6 +1268,7 @@ button {
 }
 
 .modal-message form {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -1270,7 +1284,7 @@ button {
 .modal-message input {
   width: 340px;
   height: 50px;
-  border: none;
+  border: hidden;
   padding-left: 20px;
   background-color: #f2f2f2;
   margin-top: 10px;
@@ -1457,6 +1471,20 @@ button {
 }
 
 /* Catalog Page Grid */
+
+.wrapping {
+  width: 100%;
+}
+
+.wrapping::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: var(--basic-grey-light);
+  height: 70px;
+  width: 100%;
+  z-index: -1;
+}
 
 .page-catalog {
   min-width: 1160px;
@@ -1672,6 +1700,9 @@ button {
   opacity: 0.25;
 }
 
+.filter-input-radio:disabled + label {
+  opacity: 0.25;
+}
 
 .sorting {
   grid-column: 2/-1;
@@ -1702,7 +1733,7 @@ button {
   right: 107px;
 }
 
-.sorting::before {
+/* .sorting::before {
   display: block;
   content: "";
   position: absolute;
@@ -1711,7 +1742,7 @@ button {
   left: -72px;
   width: 116%;
   z-index: -1;
-}
+} */
 
 .sorting-list li {
   margin-right: 30px;
@@ -1721,7 +1752,16 @@ button {
   opacity: 0.3;
 }
 
+
 .sorting-list a:not([href]) {
+  opacity: 1;
+}
+
+.sorting-list a:hover {
+  opacity: 0.6;
+}
+
+.sorting-list a:active {
   opacity: 1;
 }
 
