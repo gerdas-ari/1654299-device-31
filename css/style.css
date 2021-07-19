@@ -1484,11 +1484,11 @@ button {
 
 /* Catalog Page Grid */
 
-.wrapping {
-  width: 100%;
+ .wrapping {
+  position: relative;
 }
 
-.wrapping::before {
+ .wrapping::before {
   display: block;
   content: "";
   position: absolute;
