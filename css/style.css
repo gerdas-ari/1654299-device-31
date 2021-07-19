@@ -683,6 +683,7 @@ button {
   vertical-align: middle;
   margin-top: 107px;
   margin-bottom: 69px;
+  padding: 0;
 }
 
 .categories-item  {
@@ -1712,6 +1713,7 @@ button {
   align-items: center;
   position: relative;
   justify-content: space-between;
+  width: 750px;
 }
 
 .sorting h2 {
