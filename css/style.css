@@ -577,13 +577,11 @@ button {
 .button:hover::before {
   height: 40px;
   top: 0;
-  left: 5px;
 }
 
 .button:focus::before {
   height: 40px;
   top: 0;
-  left: 5px;
   outline: none;
 }
 
@@ -830,21 +828,49 @@ button {
   width: 7px;
   height: 320px;
   background-color: var(--basic-black);
-  top: -73px;
+  top: -78px;
   left: 277px;
 }
 
 .delivery-button,
 .warranty-button,
 .credit-button {
-  padding-bottom: 28px;
+  width: 160px;
+  padding-bottom: 29px;
+  padding-left: 0;
 }
 
-.delivery-button:active::before {
+.delivery-button::before,
+.warranty-button::before,
+.credit-button::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  width: 160px;
+  height: 8px;
+  background-color: var(--special-yellow-dark);
+  position: absolute;
+  z-index: -1;
+  top: 18px;
+  left: 0;
+}
+
+.current-button {
   color: var(--special-yellow-light);
-  background-color: var(--basic-black);
+}
+
+.current-button::before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
   width: 277px;
   height: 40px;
+  background-color: var(--basic-black);
+  color: var(--special-yellow-light);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
 /* Partners */
@@ -1070,7 +1096,7 @@ button {
   grid-row: 1/2;
   text-align: end;
   align-self: center;
-  margin-top: 10px;
+  margin-top: 3px;
 }
 
 .footer-socials {
@@ -1485,11 +1511,11 @@ button {
 
 /* Catalog Page Grid */
 
- .wrapping {
+.wrapping {
   position: relative;
 }
 
- .wrapping::before {
+.wrapping::before {
   display: block;
   content: "";
   position: absolute;
@@ -1505,7 +1531,7 @@ button {
   grid-template-columns: 328px 760px;
   grid-template-rows: 70px auto 70px;
   column-gap: 72px;
-  margin-bottom: 78px;
+  margin-bottom: 80px;
 }
 
 /* Filter */
@@ -1753,17 +1779,6 @@ button {
   right: 107px;
 }
 
-/* .sorting::before {
-  display: block;
-  content: "";
-  position: absolute;
-  background-color: var(--basic-grey-light);
-  height: 70px;
-  left: -72px;
-  width: 116%;
-  z-index: -1;
-} */
-
 .sorting-list li {
   margin-right: 30px;
 }
@@ -1771,7 +1786,6 @@ button {
 .sorting-list a {
   opacity: 0.3;
 }
-
 
 .sorting-list a:not([href]) {
   opacity: 1;
@@ -1954,6 +1968,11 @@ li.catalog-item:nth-child(1) > a:nth-child(1) > h3:nth-child(1) {
 
 li.catalog-item:nth-child(1) > p:nth-child(3) {
   padding-top: 5px;
+  margin-right: 6px;
+}
+
+li.catalog-item:nth-child(3) > p:nth-child(3) {
+  margin-right: 4px;
 }
 
 .pages {
