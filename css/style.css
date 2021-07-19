@@ -354,15 +354,15 @@ button {
 }
 
 .site-navigation-item.delivery {
-  margin-right: 40px;
+  margin-right: 36px;
 }
 
 .site-navigation-item.warranty {
-  margin-right: 100px;
+  margin-right: 108px;
 }
 
 .site-navigation-item.contacts {
-  margin-right: 60px;
+  margin-right: 56px;
 }
 
 .drop-down-menu {
@@ -659,9 +659,16 @@ button {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  padding-right: 80px;
-  padding-top: 15px;
+  padding-right: 60px;
+  padding-top: 10px;
+  letter-spacing: 0.1em;
 }
+
+.slider-item-quadcopter > div:nth-child(2) > table:nth-child(5) {
+  margin-left: -3px;
+  letter-spacing: 0.1em;
+}
+
 
 .slider-items-table-description {
   font-family: "Gilroy", Arial, sans-serif;
@@ -681,8 +688,8 @@ button {
   grid-template-rows: auto;
   text-align: center;
   vertical-align: middle;
-  margin-top: 107px;
-  margin-bottom: 69px;
+  margin-top: 114px;
+  margin-bottom: 66px;
   padding: 0;
 }
 
@@ -757,8 +764,8 @@ button {
   width: 136px;
   height: 164px;
   background-image: url("../img/icon-delivery.svg");
-  right: 0;
-  top: 86px;
+  right: 3px;
+  top: 87px;
 }
 
 .service-name {
@@ -850,8 +857,8 @@ button {
   grid-template-columns: 1fr 1fr 1fr 1fr ;
   grid-template-rows: 1fr;
   gap: 40px;
-  margin-top: 90px;
-  margin-bottom: 90px;
+  margin-top: 94px;
+  margin-bottom: 84px;
 }
 
 .partners-dji, .partners-sp,
@@ -910,7 +917,7 @@ button {
   padding-left: 0;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin-bottom: 70px;
+  margin-bottom: 76px;
 }
 
 .block-name {
@@ -919,7 +926,7 @@ button {
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  margin-top: 53px;
+  margin-top: 56px;
   margin-bottom: 43px;
 }
 
@@ -965,7 +972,7 @@ button {
 }
 
 .about-us-block p {
-  margin-bottom: 48px;
+  margin-bottom: 60px;
 }
 
 .about-us-description {
@@ -975,6 +982,10 @@ button {
 .about-us-block p,
 .contacts-block p {
   line-height: 28px;
+}
+
+.about-us-block > p:nth-child(2) {
+  margin-bottom: 38px;
 }
 
 .about-us-block,
@@ -987,7 +998,7 @@ button {
 }
 
 .contacts-block img {
-  margin-top: 18px;
+  margin-top: 20px;
 }
 
 .about-us-block::before,
@@ -1570,7 +1581,7 @@ button {
   position: absolute;
   width: 200px;
   height: 2px;
-  top: -14px;
+  top: -16px;
   background-color: var(--basic-black);
 }
 
@@ -1614,7 +1625,7 @@ button {
 }
 
 .range-controls .toggle-max {
-  left: 102px;
+  left: 112px;
 }
 
 .price-controls {
@@ -1627,6 +1638,7 @@ button {
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
+  margin-top: -13px;
 }
 
 .price-controls input {
@@ -1693,6 +1705,11 @@ button {
   border-radius: 50%;
 }
 
+.filter > fieldset:nth-child(2) {
+  margin-top: 12px;
+  margin-bottom: 34px;
+}
+
 .filter-option:hover {
   opacity: 0.6;
 }
@@ -1713,7 +1730,7 @@ button {
   align-items: center;
   position: relative;
   justify-content: space-between;
-  width: 750px;
+  width: 756px;
 }
 
 .sorting h2 {
@@ -1730,7 +1747,7 @@ button {
   padding: 0;
   display: flex;
   align-items: center;
-  margin-left: 74px;
+  margin-left: 86px;
   position: relative;
   right: 107px;
 }
@@ -1801,7 +1818,7 @@ button {
 
 .show-button {
   z-index: 1;
-  margin-top: 23px;
+  margin-top: 21px;
   margin-left: -12px;
 }
 
@@ -1819,7 +1836,7 @@ button {
 }
 
 .direction-item-up {
-  margin-right: 16px;
+  margin-right: 22px;
 }
 
 .direction-item-up path:hover,
@@ -1894,8 +1911,8 @@ button {
   font-size: 13px;
   line-height: 18px;
   letter-spacing: 0.1em;
-  bottom: 215px;
-  left: 96px;
+  bottom: 230px;
+  left: 97px;
   z-index: 1;
   display: none;
 }
@@ -1927,8 +1944,15 @@ button {
   line-height: 19.2px;
   letter-spacing: 0.05em;
   order: 2;
-  padding-top: 30px;
-  padding-right: 0;
+  padding-top: 26px;
+}
+
+li.catalog-item:nth-child(1) > a:nth-child(1) > h3:nth-child(1) {
+  margin-top: 5px;
+}
+
+li.catalog-item:nth-child(1) > p:nth-child(3) {
+  padding-top: 5px;
 }
 
 .pages {
