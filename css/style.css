@@ -2,32 +2,32 @@
 
 @font-face {
   font-family: "Gilroy", Arial, sans-serif;
-    src: url("fonts/gilroylight.woff2") format("woff2"),
-    url("fonts/gilroylight.woff") format("woff");
+    src: url("../fonts/gilroylight.woff2") format("woff2"),
+    url("../fonts/gilroylight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy", Arial, sans-serif;
-  src: url("fonts/gilroyextrabold.woff2") format("woff2"),
-  url("fonts/gilroyextrabold.woff") format("woff");
+  src: url("../fonts/gilroyextrabold.woff2") format("woff2"),
+  url("../fonts/gilroyextrabold.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans", Arial, sans-serif;
-  src: url("fonts/opensans.woff2") format("woff2"),
-  url("fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"),
+  url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans", Arial, sans-serif;
-  src: url("fonts/opensanslight.woff2") format("woff2"),
-  url("fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"),
+  url("../fonts/opensanslight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
@@ -686,7 +686,7 @@ button {
   margin: 0 auto;
   grid-template-columns: 160px 160px 160px 160px 160px 160px;
   grid-template-rows: auto;
-  text-align: center;
+  text-align: start;
   vertical-align: middle;
   margin-top: 114px;
   margin-bottom: 66px;
@@ -724,6 +724,7 @@ button {
   line-height: 22px;
   letter-spacing: 0.05em;
   outline: none;
+  word-break: keep-all;
 }
 
 /* Services */
